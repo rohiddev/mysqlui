@@ -11,3 +11,9 @@ INSERT INTO cities(name, population) VALUES('New York', 8550000);
 INSERT INTO cities(name, population) VALUES('Edinburgh', 464000);
 INSERT INTO cities(name, population) VALUES('Berlin', 3671000);
 
+CREATE TABLE users(userId INTEGER NOT NULL,userName VARCHAR(100) NOT NULL,userEmail VARCHAR(100) DEFAULT NULL,address VARCHAR(100) DEFAULT NULL,PRIMARY KEY (userId));
+insert into users(userId, userName, userEmail, address) values (1000, 'Dinesh', 'dinesh@gmail.com', 'Delhi');
+insert into users(userId, userName, userEmail, address) values (1001, 'Kumar', 'kumar@gmail.com', 'Greater Noida');
+insert into users(userId, userName, userEmail, address) values (1002, 'Rajput', 'rajput@gmail.com', 'Noida');
+commit;
+select * from users;
