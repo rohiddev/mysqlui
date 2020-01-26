@@ -11,7 +11,7 @@ import com.rohid.model.City;
 import com.rohid.service.ICityService;
 
 @Controller
-public class MyController {
+public class MyController  {
 
     @Autowired
     private ICityService cityService;
